@@ -1,4 +1,4 @@
-package fr.unice.polytech.startingpoint;
+package fr.cotedazur.univ.polytech.startingpoint;
 
 public class Main {
 
