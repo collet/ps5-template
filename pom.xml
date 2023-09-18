@@ -12,7 +12,7 @@
         <java.version>17</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
-        <junit.bom.version>5.9.1</junit.bom.version>
+        <junit.bom.version>5.10.0</junit.bom.version>
     </properties>
 
     <dependencyManagement> <!-- helps maven to resolve conflicting transitive dependencies -->
@@ -37,15 +37,15 @@
 
     <build>
         <plugins>
-            <!-- JUnit 5.9.1 requires maven surefire 3.0.0-M6 / maven compiler 3.8.1 -->
+            <!-- JUnit 5.10.0 requires maven surefire 3.1.2 -->
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
+                <version>3.11.0</version>
             </plugin>
 
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M6</version>
+                <version>3.1.2</version>
             </plugin>
 
             <plugin>
