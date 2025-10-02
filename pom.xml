@@ -9,10 +9,9 @@
     <properties>
         <project.build.sourceEncoding>UTF-8
         </project.build.sourceEncoding> <!-- CHANGE ME IF NEEDED, other : ISO-8859-1 -->
-        <java.version>17</java.version>
-        <maven.compiler.source>${java.version}</maven.compiler.source>
-        <maven.compiler.target>${java.version}</maven.compiler.target>
-        <junit.bom.version>5.10.1</junit.bom.version>
+        <java.version>21</java.version>
+        <maven.compiler.release>${java.version}</maven.compiler.release>
+        <junit.bom.version>5.14.0</junit.bom.version>
     </properties>
 
     <dependencyManagement> <!-- helps maven to resolve conflicting transitive dependencies -->
@@ -37,21 +36,20 @@
 
     <build>
         <plugins>
-            <!-- JUnit 5.10.1 requires maven surefire 3.2.1 -->
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.11.0</version>
+                <version>3.14.1</version>
             </plugin>
 
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.2.1</version>
+                <version>3.5.4</version>
             </plugin>
 
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
-                <version>3.1.0</version>
+                <version>3.6.0</version>
                 <executions>
                     <execution>
                         <goals>
