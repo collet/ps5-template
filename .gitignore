@@ -24,6 +24,7 @@ hs_err_pid*
 
 # Eclipse and IntelliJ exclusions
 **/target
+**/out/
 **/*.iml
 .idea
 **/.idea
